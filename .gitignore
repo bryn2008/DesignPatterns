@@ -1,0 +1,13 @@
+dea/
+*.iml
+*.iws
+.classpath
+.project
+.settings/
+/reports
+/bin
+*.ncx2
+*.gbx9
+*.camelLock
+/data/s3/int-test-bucket/
+/data/logs/
