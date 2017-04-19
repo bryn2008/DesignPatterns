@@ -1,4 +1,8 @@
-dea/
+/target/
+/.classpath
+/.project
+/.springBeans
+.idea/
 *.iml
 *.iws
 .classpath
@@ -11,3 +15,4 @@ dea/
 *.camelLock
 /data/s3/int-test-bucket/
 /data/logs/
+*.class

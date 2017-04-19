@@ -1,0 +1,42 @@
+package simplefactory;
+
+import java.util.ArrayList;
+
+abstract public class Pizza {
+    String name;
+    String dough;
+    String sauce;
+    ArrayList toppings = new ArrayList();
+
+    public String getName() {
+		return name;
+	}
+
+	public void prepare() {
+		System.out.println("Preparing " + name + " from fresh ingredients");
+	}
+
+	public void bake() {
+		System.out.println("Baking " + name + " in our MEGA pizza oven.");
+	}
+
+	public void cut() {
+		System.out.println("Cutting " + name + " like a BOSS!");
+	}
+
+	public void box() {
+		System.out.println("Boxing " + name + " for the customer.");
+	}
+
+	public String toString() {
+		// code to display pizza name and ingredients
+		StringBuffer display = new StringBuffer();
+		display.append("---- " + name + " ----\n");
+		display.append(dough + "\n");
+		display.append(sauce + "\n");
+		for (int i = 0; i < toppings.size(); i++) {
+			display.append((String )toppings.get(i) + "\n");
+		}
+		return display.toString();
+	}
+}
